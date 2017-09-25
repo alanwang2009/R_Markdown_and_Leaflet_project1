@@ -1,0 +1,24 @@
+---
+title: "R Markdown and Leaflet"
+author: "Haoyu Wang"
+date: "2017-09-25"
+output:
+  slidy_presentation: default
+  ioslides_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+library(leaflet)
+
+leaflet()%>%
+addTiles()%>%
+addMarkers(lat=39.2,lng=-76.6,popup="Make A")
+```
+
+
